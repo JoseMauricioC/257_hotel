@@ -9,7 +9,8 @@ Entidades y Atributos
 
     tipo_habitaciones(id_tipo_habitacion,tipo,precio)
 
-    habitaciones(id_habitacion, numero_habitacion, id_tipo_habitacion)
+    habitaciones(id_habitacion, numero_habitacion, id_tipo_habitacion, en_mantenimiento,
+     fecha_ultimo_mantenimiento, detalle_mantenimiento, id_empleado_mantenimiento)
 
     fotos_habitaciones(id_foto, id_habitacion, url_foto)
 
@@ -21,11 +22,8 @@ Entidades y Atributos
 
     clientes(id_cliente, nombre, apellido, direccion, telefono, correo)
 
-    pagos(id_pago, id_cliente, id_reserva, monto,  fecha_pago, metodo_pago)
-
-    facturas(id_factura, id_cliente, id_pago, fecha_factura, total)
-
-    mantenimiento_Habitacion(id_mantenimiento, id_habitacion, id_empleado, fecha_mantenimiento, detalle)
+    pagos(id_pago, id_cliente, id_reserva, monto,  fecha_pago, metodo_pago, fecha_factura,
+     numero_factura, detalle_factura, total_factura )
 
     inventario(id_inventario, nombre_item, cantidad, ubicacion, id_habitacion)
 
